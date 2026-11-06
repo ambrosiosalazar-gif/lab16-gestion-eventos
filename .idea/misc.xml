@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/lab16-gestion-eventos/api-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/lab16-gestion-eventos/asistente-service/pom.xml" />
+        <option value="$PROJECT_DIR$/lab16-gestion-eventos/eureka-server/pom.xml" />
+        <option value="$PROJECT_DIR$/lab16-gestion-eventos/evento-service/pom.xml" />
+        <option value="$PROJECT_DIR$/lab16-gestion-eventos/inscripcion-service/pom.xml" />
+        <option value="$PROJECT_DIR$/lab16-gestion-eventos/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_24" default="true" project-jdk-name="openjdk-24" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

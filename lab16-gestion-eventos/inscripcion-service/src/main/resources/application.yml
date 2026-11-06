@@ -1,0 +1,18 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: inscripcion-service
+  profiles:
+    active: ${SPRING_PROFILES_ACTIVE:dev}   # dev | test | prod
+  jpa:
+    open-in-view: false
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_URL:http://localhost:8761/eureka}
+  instance:
+    prefer-ip-address: true
+clients:
+  evento-url: http://evento-service
+  asistente-url: http://asistente-service

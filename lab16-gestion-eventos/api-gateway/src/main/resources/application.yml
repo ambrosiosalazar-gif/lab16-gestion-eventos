@@ -1,0 +1,26 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: api-gateway
+  profiles:
+    active: ${SPRING_PROFILES_ACTIVE:dev}
+  cloud:
+    gateway:
+      routes:
+        - id: evento-service
+          uri: lb://evento-service
+          predicates:
+            - Path=/api/eventos/**
+        - id: asistente-service
+          uri: lb://asistente-service
+          predicates:
+            - Path=/api/asistentes/**
+        - id: inscripcion-service
+          uri: lb://inscripcion-service
+          predicates:
+            - Path=/api/inscripciones/**
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_URL:http://localhost:8761/eureka}
